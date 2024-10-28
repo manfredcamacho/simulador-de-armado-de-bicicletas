@@ -55,10 +55,17 @@ public class AgarrarObjeto : MonoBehaviour
         {
             rb.isKinematic = true;
         }
+        Collider coll = selectedObject.GetComponent<Collider>();
+        if (coll != null)
+        {
+            coll.enabled = false;
+        }
+
     }
 
     private void ReleaseObject()
-    {
+    {   
+
         if (selectedObject != null)
         {
             // Rehabilitar la física del objeto
@@ -67,10 +74,15 @@ public class AgarrarObjeto : MonoBehaviour
             {
                 rb.isKinematic = false;
             }
-
+            Collider coll = selectedObject.GetComponent<Collider>();
+            if (coll != null)
+            {
+                coll.enabled = true;
+            }
             selectedObject = null; // Limpiar la referencia del objeto seleccionado
             isObjectAttached = false; // Cambiar el estado a no agarrado
         }
+
     }
 
     private void MoveObject()
