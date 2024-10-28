@@ -402,7 +402,6 @@ GameObject:
   - component: {fileID: 364412019}
   - component: {fileID: 364412018}
   - component: {fileID: 364412017}
-  - component: {fileID: 364412016}
   m_Layer: 0
   m_Name: Pedal_R
   m_TagString: ParteBicicleta
@@ -410,18 +409,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &364412016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364412015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883d8e18bd171b747a921ece7b591dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &364412017
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -569,7 +556,6 @@ GameObject:
   - component: {fileID: 377248742}
   - component: {fileID: 377248741}
   - component: {fileID: 377248740}
-  - component: {fileID: 377248739}
   m_Layer: 0
   m_Name: Pedal
   m_TagString: ParteBicicleta
@@ -577,18 +563,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &377248739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377248738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883d8e18bd171b747a921ece7b591dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &377248740
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -816,7 +790,6 @@ GameObject:
   - component: {fileID: 472381511}
   - component: {fileID: 472381510}
   - component: {fileID: 472381508}
-  - component: {fileID: 472381507}
   - component: {fileID: 472381513}
   m_Layer: 0
   m_Name: Wheel_B
@@ -825,18 +798,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &472381507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472381506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883d8e18bd171b747a921ece7b591dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &472381508
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1528,7 +1489,6 @@ GameObject:
   - component: {fileID: 901398787}
   - component: {fileID: 901398786}
   - component: {fileID: 901398785}
-  - component: {fileID: 901398784}
   m_Layer: 0
   m_Name: Pedal_L
   m_TagString: ParteBicicleta
@@ -1536,18 +1496,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &901398784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901398783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883d8e18bd171b747a921ece7b591dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &901398785
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1805,7 +1753,6 @@ GameObject:
   - component: {fileID: 981685295}
   - component: {fileID: 981685294}
   - component: {fileID: 981685293}
-  - component: {fileID: 981685292}
   m_Layer: 0
   m_Name: Wheel_F
   m_TagString: ParteBicicleta
@@ -1813,18 +1760,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &981685292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981685291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883d8e18bd171b747a921ece7b591dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &981685293
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2442,7 +2377,6 @@ GameObject:
   - component: {fileID: 1706978409}
   - component: {fileID: 1706978408}
   - component: {fileID: 1706978407}
-  - component: {fileID: 1706978406}
   m_Layer: 0
   m_Name: Body
   m_TagString: ParteBicicleta
@@ -2450,18 +2384,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1706978406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706978405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883d8e18bd171b747a921ece7b591dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &1706978407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2595,7 +2517,6 @@ GameObject:
   - component: {fileID: 1821635680}
   - component: {fileID: 1821635679}
   - component: {fileID: 1821635678}
-  - component: {fileID: 1821635677}
   m_Layer: 0
   m_Name: Steer
   m_TagString: ParteBicicleta
@@ -2603,18 +2524,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1821635677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821635676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 883d8e18bd171b747a921ece7b591dbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &1821635678
 MeshCollider:
   m_ObjectHideFlags: 0
