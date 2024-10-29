@@ -207,9 +207,8 @@ GameObject:
   - component: {fileID: 219467181}
   - component: {fileID: 219467183}
   - component: {fileID: 219467182}
-  - component: {fileID: 219467184}
   m_Layer: 0
-  m_Name: Steer
+  m_Name: Steer Cruz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -280,18 +279,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219467180}
   m_Mesh: {fileID: -4640979610182688294, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
---- !u!114 &219467184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219467180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &362692189
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +290,6 @@ GameObject:
   - component: {fileID: 362692190}
   - component: {fileID: 362692192}
   - component: {fileID: 362692191}
-  - component: {fileID: 362692193}
   m_Layer: 0
   m_Name: Body Verde
   m_TagString: Untagged
@@ -377,18 +363,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362692189}
   m_Mesh: {fileID: 2959467708922500008, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
---- !u!114 &362692193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362692189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &364412015
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +376,7 @@ GameObject:
   - component: {fileID: 364412019}
   - component: {fileID: 364412018}
   - component: {fileID: 364412017}
+  - component: {fileID: 364412022}
   m_Layer: 0
   m_Name: Pedal_R
   m_TagString: ParteBicicleta
@@ -523,6 +498,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 14291069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &364412022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364412015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10442c133ad0f4409511e9814fbd104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1685621525}
+  snapPoint: {fileID: 791307710}
+  offset: {x: 0, y: -0.5, z: 1}
+  snapDistance: 0.5
+  moveSpeed: 5
 --- !u!1 &377248738
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +528,7 @@ GameObject:
   - component: {fileID: 377248742}
   - component: {fileID: 377248741}
   - component: {fileID: 377248740}
+  - component: {fileID: 377248745}
   m_Layer: 0
   m_Name: Pedal
   m_TagString: ParteBicicleta
@@ -657,6 +650,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 14291069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377248745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377248738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10442c133ad0f4409511e9814fbd104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1685621525}
+  snapPoint: {fileID: 1045228950}
+  offset: {x: 0, y: -0.5, z: 1}
+  snapDistance: 0.5
+  moveSpeed: 5
 --- !u!1 &391595767
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,9 +678,8 @@ GameObject:
   - component: {fileID: 391595768}
   - component: {fileID: 391595770}
   - component: {fileID: 391595769}
-  - component: {fileID: 391595771}
   m_Layer: 0
-  m_Name: Pedal_L
+  m_Name: Pedal_L Verde Izquierdo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,18 +750,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391595767}
   m_Mesh: {fileID: 3255905351707407981, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
---- !u!114 &391595771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391595767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &472065717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26a755859e529014e9c19cbcb8a70311, type: 3}
@@ -771,6 +768,7 @@ GameObject:
   - component: {fileID: 472381510}
   - component: {fileID: 472381508}
   - component: {fileID: 472381513}
+  - component: {fileID: 472381514}
   m_Layer: 0
   m_Name: Wheel_B
   m_TagString: ParteBicicleta
@@ -893,6 +891,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &472381514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472381506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10442c133ad0f4409511e9814fbd104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1685621525}
+  snapPoint: {fileID: 1155498829}
+  offset: {x: 0, y: -0.5, z: 1}
+  snapDistance: 0.5
+  moveSpeed: 5
 --- !u!1 &548424109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,9 +1386,8 @@ GameObject:
   - component: {fileID: 791307710}
   - component: {fileID: 791307712}
   - component: {fileID: 791307711}
-  - component: {fileID: 791307713}
   m_Layer: 0
-  m_Name: Pedal_R
+  m_Name: Pedal_R Verde Derecho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1444,18 +1458,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791307709}
   m_Mesh: {fileID: -1159910841360783040, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
---- !u!114 &791307713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 791307709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &901398783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1471,7 @@ GameObject:
   - component: {fileID: 901398787}
   - component: {fileID: 901398786}
   - component: {fileID: 901398785}
+  - component: {fileID: 901398790}
   m_Layer: 0
   m_Name: Pedal_L
   m_TagString: ParteBicicleta
@@ -1590,6 +1593,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 14291069}
   m_LocalEulerAnglesHint: {x: -6.106, y: -179.626, z: -107.765}
+--- !u!114 &901398790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901398783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10442c133ad0f4409511e9814fbd104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1685621525}
+  snapPoint: {fileID: 391595768}
+  offset: {x: 0, y: -0.5, z: 1}
+  snapDistance: 0.5
+  moveSpeed: 5
 --- !u!1001 &947233398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1733,6 +1753,7 @@ GameObject:
   - component: {fileID: 981685295}
   - component: {fileID: 981685294}
   - component: {fileID: 981685293}
+  - component: {fileID: 981685298}
   m_Layer: 0
   m_Name: Wheel_F
   m_TagString: ParteBicicleta
@@ -1855,6 +1876,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 14291069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981685298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981685291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10442c133ad0f4409511e9814fbd104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1685621525}
+  snapPoint: {fileID: 1496191876}
+  offset: {x: 0, y: -0.5, z: 1}
+  snapDistance: 0.5
+  moveSpeed: 5
 --- !u!4 &993314359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26a755859e529014e9c19cbcb8a70311, type: 3}
@@ -1871,9 +1909,8 @@ GameObject:
   - component: {fileID: 1045228950}
   - component: {fileID: 1045228952}
   - component: {fileID: 1045228951}
-  - component: {fileID: 1045228953}
   m_Layer: 0
-  m_Name: Pedal
+  m_Name: Pedal Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1944,18 +1981,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045228949}
   m_Mesh: {fileID: 8065566641825402270, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
---- !u!114 &1045228953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045228949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1155498828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,9 +1992,8 @@ GameObject:
   - component: {fileID: 1155498829}
   - component: {fileID: 1155498831}
   - component: {fileID: 1155498830}
-  - component: {fileID: 1155498832}
   m_Layer: 0
-  m_Name: Wheel_F
+  m_Name: Wheel_F Verde Delantera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2041,18 +2065,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155498828}
   m_Mesh: {fileID: -4163810863384186614, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
---- !u!114 &1155498832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1155498828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1367027245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2223,9 +2235,8 @@ GameObject:
   - component: {fileID: 1496191878}
   - component: {fileID: 1496191877}
   - component: {fileID: 1496191880}
-  - component: {fileID: 1496191879}
   m_Layer: 0
-  m_Name: Wheel_B
+  m_Name: Wheel_B Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2297,18 +2308,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496191875}
   m_Mesh: {fileID: 3198540174145334802, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
---- !u!114 &1496191879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496191875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &1496191880
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2471,7 +2470,7 @@ Transform:
   m_GameObject: {fileID: 1706978405}
   serializedVersion: 2
   m_LocalRotation: {x: -0.4920823, y: -0.07680901, z: 0.17800193, w: 0.8486876}
-  m_LocalPosition: {x: -1.22, y: 6.88, z: 4.66}
+  m_LocalPosition: {x: -1.62, y: 6.72, z: 4.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2486,11 +2485,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1706978405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a17d9bd831b8ff14ab2306300aefc521, type: 3}
+  m_Script: {fileID: 11500000, guid: e10442c133ad0f4409511e9814fbd104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1685621525}
   snapPoint: {fileID: 362692190}
-  snapDistance: 5
+  offset: {x: 0, y: -0.5, z: 1}
+  snapDistance: 0.5
+  moveSpeed: 5
 --- !u!4 &1708361204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
@@ -2509,6 +2511,7 @@ GameObject:
   - component: {fileID: 1821635680}
   - component: {fileID: 1821635679}
   - component: {fileID: 1821635678}
+  - component: {fileID: 1821635683}
   m_Layer: 0
   m_Name: Steer
   m_TagString: ParteBicicleta
@@ -2630,6 +2633,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 14291069}
   m_LocalEulerAnglesHint: {x: -49.126, y: -143.245, z: -67.643}
+--- !u!114 &1821635683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821635676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10442c133ad0f4409511e9814fbd104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 1685621525}
+  snapPoint: {fileID: 219467181}
+  offset: {x: 0, y: -0.5, z: 1}
+  snapDistance: 0.5
+  moveSpeed: 5
 --- !u!4 &1878473215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26a755859e529014e9c19cbcb8a70311, type: 3}
@@ -2644,7 +2664,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938613927}
-  - component: {fileID: 1938613928}
   m_Layer: 0
   m_Name: Agarrar Objetos Script
   m_TagString: Untagged
@@ -2667,21 +2686,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1938613928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938613926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de949b463d09cf42ba697b8f74f6a61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCamera: {fileID: 1685621525}
-  offset: {x: 0, y: -0.5, z: 1}
-  moveSpeed: 15
 --- !u!1001 &2014639368
 PrefabInstance:
   m_ObjectHideFlags: 0
