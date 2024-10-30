@@ -7,12 +7,16 @@ public class ConexionDePosicion : MonoBehaviour
     public Transform snapPoint; // Punto donde la pieza debe encajar
     public float snapDistance = 0.5f; // Distancia mínima para encajar
     private bool isAttached = false; // Indica si la pieza ya está encajada
+    public GameObject agarraScript;
 
     void Update()
     {
         // Si la pieza está cerca y no está aún encajada
         if (!isAttached && Vector3.Distance(transform.position, snapPoint.position) < snapDistance)
         {
+
+            AgarrarObjeto  agarrar = agarraScript.GetComponent<AgarrarObjeto>();
+            agarrar.ReleaseObject();
             SnapToPlace(); // Encajar la pieza en el lugar correcto
             Debug.Log("encajar pieza");
         }
@@ -32,6 +36,7 @@ public class ConexionDePosicion : MonoBehaviour
         transform.position = snapPoint.position; // Coloca la pieza en la posición exacta
         transform.rotation = snapPoint.rotation; // Ajusta la rotación de la pieza
         isAttached = true; // Marca la pieza como encajada
+        snapPoint.gameObject.SetActive(false);
 
         // Opcional: Desactiva el Rigidbody si ya no es necesario
         Rigidbody rb = GetComponent<Rigidbody>();
