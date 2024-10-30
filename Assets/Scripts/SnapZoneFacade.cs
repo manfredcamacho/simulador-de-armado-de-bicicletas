@@ -18,20 +18,21 @@ public class SnapZoneFacade : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Renderer snapZone = GetComponent<Renderer>();
-        snapZone.material.color = Color.red;
+        
+        /*Renderer snapZone = GetComponent<Renderer>();
+        snapZone.material.color = Color.red;*/
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Renderer snapZone = GetComponent<Renderer>();
-        snapZone.material.color = new Color(0, 1, 0, 0.2f);
+        /*Renderer snapZone = GetComponent<Renderer>();
+        snapZone.material.color = new Color(0, 1, 0, 0.2f);*/
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Renderer snapZone = GetComponent<Renderer>();
-        snapZone.material.color = new Color(1, 0, 0, 0.2f);
+        /*Renderer snapZone = GetComponent<Renderer>();
+        snapZone.material.color = new Color(1, 0, 0, 0.2f);*/
     }
 }

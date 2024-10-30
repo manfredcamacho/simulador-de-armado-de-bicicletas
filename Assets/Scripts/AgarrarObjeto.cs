@@ -11,6 +11,10 @@ public class AgarrarObjeto : MonoBehaviour
 
     void Update()
     {
+        // Proyectar un rayo desde la cámara hacia el mouse
+        Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
         // Detectar clic izquierdo del mouse
         if (Input.GetMouseButtonDown(0))
         {
@@ -21,10 +25,6 @@ public class AgarrarObjeto : MonoBehaviour
                 ReleaseObject();
                 return; // Salimos del método
             }
-
-            // Proyectar un rayo desde la cámara hacia el mouse
-            Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
 
             // Verificar si el rayo ha tocado un objeto con el tag "Grabbable"
             if (Physics.Raycast(ray, out hit))
@@ -63,7 +63,7 @@ public class AgarrarObjeto : MonoBehaviour
 
     }
 
-    private void ReleaseObject()
+    public void ReleaseObject()
     {   
 
         if (selectedObject != null)
