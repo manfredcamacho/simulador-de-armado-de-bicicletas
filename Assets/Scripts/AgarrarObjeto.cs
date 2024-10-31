@@ -100,3 +100,11 @@ public class AgarrarObjeto : MonoBehaviour
         selectedObject.transform.LookAt(playerCamera.transform.position);
     }
 }
+/*1 Cuerpo
+2 Cruz
+3 Rueda Delante
+4 Rueda Trasera
+5 Pedalera
+6 Pedal Derecho
+7 Pedal Izquierdo 
+Este orden va porque va de mas facil a mas dificil*/

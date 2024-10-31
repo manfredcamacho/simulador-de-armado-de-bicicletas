@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 219467182}
   - component: {fileID: 219467184}
   m_Layer: 0
-  m_Name: Steer
+  m_Name: Steer Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219467180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
   m_Name: 
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362692189}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
   m_Name: 
@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 391595769}
   - component: {fileID: 391595771}
   m_Layer: 0
-  m_Name: Pedal_L
+  m_Name: Pedal_L Izquierdo Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391595767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
   m_Name: 
@@ -1591,6 +1591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 736379652}
+  - component: {fileID: 736379653}
   m_Layer: 0
   m_Name: Bici Virtual Verde
   m_TagString: Untagged
@@ -1620,6 +1621,36 @@ Transform:
   - {fileID: 1496191876}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &736379653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736379651}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4615fc2243843114aab82aa6b5b53202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntosDeEncaje:
+  - {fileID: 362692190}
+  - {fileID: 219467181}
+  - {fileID: 1155498829}
+  - {fileID: 1496191876}
+  - {fileID: 1045228950}
+  - {fileID: 791307710}
+  - {fileID: 391595768}
+  nombresDePiezas:
+  - Body
+  - Pedal
+  - Pedal_L
+  - Pedal_R
+  - Steer
+  - Wheel_F
+  - Wheel_B
+  materialResaltado: {fileID: 2100000, guid: f2830af80c5ff224aa28e506d21cb9cd, type: 2}
+  materialNormal: {fileID: 2100000, guid: ea1cc228a30b5794d8addf0bf689c990, type: 2}
 --- !u!1 &791307709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1664,7 @@ GameObject:
   - component: {fileID: 791307711}
   - component: {fileID: 791307713}
   m_Layer: 0
-  m_Name: Pedal_R
+  m_Name: Pedal_R Derecho Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1711,7 +1742,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791307709}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
   m_Name: 
@@ -2281,7 +2312,7 @@ GameObject:
   - component: {fileID: 1045228951}
   - component: {fileID: 1045228953}
   m_Layer: 0
-  m_Name: Pedal
+  m_Name: Pedalera Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2359,7 +2390,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045228949}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
   m_Name: 
@@ -2377,7 +2408,7 @@ GameObject:
   - component: {fileID: 1155498830}
   - component: {fileID: 1155498832}
   m_Layer: 0
-  m_Name: Wheel_F
+  m_Name: Wheel_F Delantera Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2456,7 +2487,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155498828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
   m_Name: 
@@ -3424,7 +3455,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
       insertIndex: -1
       addedObject: {fileID: 472381512}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1852845920}
   m_SourcePrefab: {fileID: 100100000, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
 --- !u!1001 &1443724354
 PrefabInstance:
@@ -3508,7 +3542,7 @@ GameObject:
   - component: {fileID: 1496191877}
   - component: {fileID: 1496191879}
   m_Layer: 0
-  m_Name: Wheel_B
+  m_Name: Wheel_B Trasera Verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3587,7 +3621,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496191875}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6143fabc6dae89a4bb020edc76dfd722, type: 3}
   m_Name: 
@@ -4138,6 +4172,41 @@ MonoBehaviour:
   snapPoint: {fileID: 219467181}
   snapDistance: 0.5
   agarraScript: {fileID: 1938613926}
+--- !u!1 &1852845919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e3a436e0ac6013f41999e23f2cc91370, type: 3}
+  m_PrefabInstance: {fileID: 1367027245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1852845920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852845919}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4615fc2243843114aab82aa6b5b53202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntosDeEncaje:
+  - {fileID: 362692190}
+  - {fileID: 219467181}
+  - {fileID: 1155498829}
+  - {fileID: 1496191876}
+  - {fileID: 1045228950}
+  - {fileID: 791307710}
+  - {fileID: 391595768}
+  nombresDePiezas:
+  - Body
+  - Pedal
+  - Pedal_L
+  - Pedal_R
+  - Steer
+  - Wheel_F
+  - Wheel_B
+  materialResaltado: {fileID: 2100000, guid: f2830af80c5ff224aa28e506d21cb9cd, type: 2}
+  materialNormal: {fileID: 2100000, guid: ea1cc228a30b5794d8addf0bf689c990, type: 2}
 --- !u!4 &1878473215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26a755859e529014e9c19cbcb8a70311, type: 3}
@@ -4153,8 +4222,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1938613927}
   - component: {fileID: 1938613928}
+  - component: {fileID: 1938613929}
   m_Layer: 0
-  m_Name: Agarrar Objetos Script
+  m_Name: Scripts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4190,6 +4260,36 @@ MonoBehaviour:
   playerCamera: {fileID: 1685621525}
   offset: {x: 0, y: -0.5, z: 1}
   moveSpeed: 15
+--- !u!114 &1938613929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938613926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4615fc2243843114aab82aa6b5b53202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntosDeEncaje:
+  - {fileID: 362692190}
+  - {fileID: 219467181}
+  - {fileID: 1155498829}
+  - {fileID: 1496191876}
+  - {fileID: 1045228950}
+  - {fileID: 791307710}
+  - {fileID: 391595768}
+  nombresDePiezas:
+  - Body
+  - Pedal
+  - Pedal_L
+  - Pedal_R
+  - Steer
+  - Wheel_F
+  - Wheel_B
+  materialResaltado: {fileID: 2100000, guid: 282a49ee09057f44aa8fb4a71660a9c1, type: 2}
+  materialNormal: {fileID: 2100000, guid: 87a8b9a6a53562c499d7fc6fb4defaff, type: 2}
 --- !u!1001 &2014639368
 PrefabInstance:
   m_ObjectHideFlags: 0
