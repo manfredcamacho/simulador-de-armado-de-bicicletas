@@ -18,9 +18,9 @@ public class ConexionDePosicion : MonoBehaviour
             AgarrarObjeto  agarrar = agarraScript.GetComponent<AgarrarObjeto>();
             agarrar.ReleaseObject();
             SnapToPlace(); // Encajar la pieza en el lugar correcto
-            Debug.Log("encajar pieza");
+            
         }
-        Debug.Log("Estas lejos");
+        
     }
 
     private void OnMouseUp() // Detecta cuando se suelta la pieza
@@ -45,6 +45,6 @@ public class ConexionDePosicion : MonoBehaviour
             rb.isKinematic = true;
         }
 
-        Debug.Log(gameObject.name + " encajado correctamente en su posición.");
+        
     }
 }
