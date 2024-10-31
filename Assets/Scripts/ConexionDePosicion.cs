@@ -37,7 +37,7 @@ public class ConexionDePosicion : MonoBehaviour
         transform.rotation = snapPoint.rotation; // Ajusta la rotación de la pieza
         isAttached = true; // Marca la pieza como encajada
         snapPoint.gameObject.SetActive(false);
-
+        gameObject.tag = "Untagged";
         // Opcional: Desactiva el Rigidbody si ya no es necesario
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
