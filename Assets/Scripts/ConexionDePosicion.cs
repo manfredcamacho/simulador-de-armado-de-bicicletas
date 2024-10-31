@@ -4,41 +4,40 @@ using UnityEngine;
 
 public class ConexionDePosicion : MonoBehaviour
 {
-    public Transform snapPoint; // Punto donde la pieza debe encajar
-    public float snapDistance = 0.5f; // Distancia mínima para encajar
-    private bool isAttached = false; // Indica si la pieza ya está encajada
+    public Transform snapPoint; 
+    public float snapDistance = 0.5f; 
+    private bool isAttached = false;
     public GameObject agarraScript;
 
     void Update()
     {
-        // Si la pieza está cerca y no está aún encajada
         if (!isAttached && Vector3.Distance(transform.position, snapPoint.position) < snapDistance)
         {
-
-            AgarrarObjeto  agarrar = agarraScript.GetComponent<AgarrarObjeto>();
-            agarrar.ReleaseObject();
-            SnapToPlace(); // Encajar la pieza en el lugar correcto
-            
+            OrdenDeArmadoBicicleta orden = gameObject.GetComponentInParent<OrdenDeArmadoBicicleta>();
+            if (orden.PuedeColocarPieza(gameObject))
+            {
+                AgarrarObjeto agarrar = agarraScript.GetComponent<AgarrarObjeto>();
+                agarrar.ReleaseObject();
+                SnapToPlace();
+                orden.ResaltarSiguientePieza();
+            }
+            else
+            {
+                //cambiar color de la pieza?
+                Debug.Log("No es la pieza correcta");
+            }
         }
         
     }
 
-    private void OnMouseUp() // Detecta cuando se suelta la pieza
-    {
-        if (!isAttached && Vector3.Distance(transform.position, snapPoint.position) < snapDistance)
-        {
-            SnapToPlace();
-        }
-    }
-
     private void SnapToPlace()
     {
-        transform.position = snapPoint.position; // Coloca la pieza en la posición exacta
-        transform.rotation = snapPoint.rotation; // Ajusta la rotación de la pieza
-        isAttached = true; // Marca la pieza como encajada
+        transform.position = snapPoint.position; 
+        transform.rotation = snapPoint.rotation;
+        isAttached = true; 
         snapPoint.gameObject.SetActive(false);
         gameObject.tag = "Untagged";
-        // Opcional: Desactiva el Rigidbody si ya no es necesario
+        
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
