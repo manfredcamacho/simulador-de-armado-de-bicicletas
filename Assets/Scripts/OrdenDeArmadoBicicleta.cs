@@ -40,8 +40,9 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
 
     private void ResaltarPieza(int indice)
     {
+        //Obtiene la pieza virtual a resaltar enlazado a traves del script ConexionDePosicion
         Renderer renderer = ordenDeArmado[indice].GetComponent<ConexionDePosicion>().snapPoint.GetComponent<Renderer>();
-            
+        //Resaltar la pieza virtual a traves de materialResaltado
         renderer.materials = Enumerable.Repeat(materialResaltado, renderer.materials.Length).ToArray();
     }
 }

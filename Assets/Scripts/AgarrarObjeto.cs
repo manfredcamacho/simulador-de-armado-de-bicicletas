@@ -55,6 +55,8 @@ public class AgarrarObjeto : MonoBehaviour
         {
             rb.isKinematic = true;
         }
+
+        // Desactivar el collider del objeto
         Collider coll = selectedObject.GetComponent<Collider>();
         if (coll != null)
         {
@@ -74,6 +76,7 @@ public class AgarrarObjeto : MonoBehaviour
             {
                 rb.isKinematic = false;
             }
+            // Reactivar el collider del objeto
             Collider coll = selectedObject.GetComponent<Collider>();
             if (coll != null)
             {
