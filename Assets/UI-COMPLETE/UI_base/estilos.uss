@@ -1,46 +1,28 @@
 VisualElement {
 }
 
-.container {
+.contenedor-primario {
+    flex-direction: row;
+    justify-content: center;
 }
 
-.container-2 {
+.Derecha- {
+    justify-content: space-between;
+    height: 100%;
+    max-width: 500px;
+    min-width: 401px;
+    align-self: auto;
 }
 
-.container-3 {
+.izquierda- {
 }
 
-.start-btn {
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+.LoGo {
+    background-image: url("project://database/Assets/UI-COMPLETE/UI_base/bici-sim%20(1).png?fileID=21300000&guid=353d49ff77f6ac14d92a4f637b2c7b95&type=3#bici-sim (1)");
 }
 
-.instructions-btn {
-    -unity-text-outline-color: rgb(13, 180, 152);
-    background-color: rgb(13, 180, 152);
-    transition-duration: 0.5s, 0s;
-    transition-timing-function: ease-in-out, ease;
-    transition-property: all, ignored;
+.BotoNes {
 }
 
-.instructions-btn:hover {
-    background-color: rgb(0, 0, 0);
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    border-left-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    cursor: initial;
-    -unity-background-image-tint-color: rgb(255, 255, 255);
-    -unity-text-outline-color: rgba(255, 255, 255, 0);
-    color: rgb(250, 250, 250);
-}
-
-.start-btn:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(5, 3, 3);
+.FooTer {
 }
