@@ -3,12 +3,27 @@
     <ui:VisualElement name="ContenedorPrimario" class="contenedor-primario" style="flex-grow: 1; width: 100%; height: 100%; flex-direction: row; justify-content: center; background-image: url(&quot;project://database/Assets/UI-COMPLETE/UI_base/BG.jpg?fileID=2800000&amp;guid=17418c945ee3bd24dbcd658ddefeb8fd&amp;type=3#BG&quot;);">
         <ui:VisualElement name="leftContainer" class="left-container" style="justify-content: center;">
             <ui:VisualElement name="Logo" class="logo-container" style="flex-grow: 1; margin-top: 30px; background-image: url(&quot;project://database/Assets/UI-COMPLETE/UI_base/bici-sim%20(1).png?fileID=21300000&amp;guid=353d49ff77f6ac14d92a4f637b2c7b95&amp;type=3#bici-sim (1)&quot;); -unity-background-scale-mode: scale-to-fit; width: 100%; height: 30%; -unity-text-align: upper-center; align-items: center; justify-content: center; align-self: center;" />
-            <ui:VisualElement name="Botones" class="btn-container" style="flex-grow: 1; height: 94px; width: 171px; justify-content: flex-start;">
+            <ui:VisualElement name="Botones" class="btn-container" style="flex-grow: 1; height: 94px; width: 171px; justify-content: flex-start; align-items: stretch;">
                 <ui:Button text="INSTRUCCIONES" parse-escape-sequences="true" display-tooltip-when-elided="true" name="instructionsBtn" class="instructions-btn" />
                 <ui:Button text="COMENZAR" parse-escape-sequences="true" display-tooltip-when-elided="true" name="startBtn" class="start-btn" />
             </ui:VisualElement>
             <ui:VisualElement name="Footer" class="footer-container" style="flex-grow: 1;" />
         </ui:VisualElement>
-        <ui:VisualElement name="rightContainer" style="flex-grow: 1; flex-wrap: nowrap; background-color: rgba(13, 49, 63, 0.77);" />
+        <ui:VisualElement name="rightContainer" style="flex-grow: 1; flex-wrap: nowrap; background-color: rgba(0, 0, 0, 0.72); height: 100%; justify-content: center;">
+            <ui:VisualElement name="garage" class="garage" style="flex-grow: 1; width: 80%;">
+                <ui:Label tabindex="-1" text="GARAGE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="garageTitle" class="garage-title" />
+                <ui:VisualElement name="bicyclesContainer" class="bicycles-container" style="flex-grow: 1; align-items: center; justify-content: space-around; align-self: center; flex-wrap: wrap; flex-direction: row;">
+                    <ui:VisualElement name="bicyclesContainerCards" class="bicycles-container-cards" style="flex-grow: 1; justify-content: space-around; align-items: center;">
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bicycle1" class="bicycles" />
+                        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bicycle2" class="bicycles" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="bicyclesContainerTxt" class="bicycles-container-txt" style="flex-grow: 1;">
+                        <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-left;" />
+                        <ui:Label tabindex="-1" text="2" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backBtn" class="back-btn" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
