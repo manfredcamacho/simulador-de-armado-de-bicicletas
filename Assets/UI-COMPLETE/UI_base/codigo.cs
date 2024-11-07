@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements; // Agregar namespace para usar en runtime
 
 public class NewBehaviourScript : MonoBehaviour // Clase que hereda de MonoBehaviour
@@ -39,5 +40,6 @@ public class NewBehaviourScript : MonoBehaviour // Clase que hereda de MonoBehav
     {
         Debug.Log("Empezando el juego...");
         // FUNCIONA
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
