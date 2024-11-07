@@ -7,7 +7,9 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
     public List<GameObject> ordenDeArmado;
     public Material materialResaltado; // Material para resaltar el siguiente punto de encaje
     private int indiceActual = 0; // Índice de la pieza actual a colocar
-
+    public Camera firstPersonCam;  // Cámara original del First Person Controller
+    public Camera camaraInterfaz;  // Cámara fija para la interfaz final
+    public InterfazControl interfazControl;
     void Start()
     {
         if (ordenDeArmado.Count > 0)
@@ -34,6 +36,7 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
         }
         else
         {
+            interfazControl.MostrarInterfazFinal();
             Debug.Log("Bicicleta armada correctamente.");
         }
     }
