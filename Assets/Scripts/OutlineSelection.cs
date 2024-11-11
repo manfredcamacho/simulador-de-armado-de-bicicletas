@@ -6,61 +6,47 @@ using UnityEngine.EventSystems;
 public class OutlineSelection : MonoBehaviour
 {
     private Transform highlight;
-    private Transform selection;
     private RaycastHit raycastHit;
 
     void Update()
     {
-        // Highlight
-        if (highlight != null)
+        // Desactiva el resaltado del objeto anterior
+        if (highlight != null && highlight.gameObject.GetComponent<Outline>() != null)
         {
             highlight.gameObject.GetComponent<Outline>().enabled = false;
             highlight = null;
         }
+
+        // Raycast desde la posición del ratón
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit)) //Make sure you have EventSystem in the hierarchy before using EventSystem
+        if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit))
         {
             highlight = raycastHit.transform;
-            if (highlight.CompareTag("ParteBicicleta") && highlight != selection)
+
+            // Verifica si el objeto es seleccionable y tiene el componente Outline
+            if (highlight.CompareTag("ParteBicicleta"))
             {
-                if (highlight.gameObject.GetComponent<Outline>() != null)
+                Outline outline = highlight.gameObject.GetComponent<Outline>();
+
+                if (outline != null)
                 {
-                    highlight.gameObject.GetComponent<Outline>().enabled = true;
+                    Debug.Log("Objeto con Outline encontrado: " + highlight.name);
+                    outline.enabled = true;
                 }
                 else
                 {
-                    Outline outline = highlight.gameObject.AddComponent<Outline>();
+                    // Agrega el componente Outline si no está presente
+                    Debug.Log("Agregando Outline a: " + highlight.name);
+                    outline = highlight.gameObject.AddComponent<Outline>();
                     outline.enabled = true;
-                    highlight.gameObject.GetComponent<Outline>().OutlineColor = Color.magenta;
-                    highlight.gameObject.GetComponent<Outline>().OutlineWidth = 9.0f;
+                    outline.OutlineColor = Color.magenta;
+                    outline.OutlineWidth = 9.0f;
                 }
             }
             else
             {
+                Debug.Log("El objeto no tiene la etiqueta 'ParteBicicleta'");
                 highlight = null;
-            }
-        }
-
-        // Selection
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (highlight)
-            {
-                if (selection != null)
-                {
-                    selection.gameObject.GetComponent<Outline>().enabled = false;
-                }
-                selection = raycastHit.transform;
-                selection.gameObject.GetComponent<Outline>().enabled = true;
-                highlight = null;
-            }
-            else
-            {
-                if (selection)
-                {
-                    selection.gameObject.GetComponent<Outline>().enabled = false;
-                    selection = null;
-                }
             }
         }
     }
