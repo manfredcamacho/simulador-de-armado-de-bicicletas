@@ -10,19 +10,23 @@
             <ui:VisualElement name="Footer" class="footer-container" style="flex-grow: 1;" />
         </ui:VisualElement>
         <ui:VisualElement name="rightContainer" style="flex-grow: 1; flex-wrap: nowrap; background-color: rgba(0, 0, 0, 0.72); height: 100%; justify-content: center;">
-            <ui:VisualElement name="garage" class="garage" style="flex-grow: 1; width: 80%;">
+            <ui:VisualElement name="garage" class="garage" style="flex-grow: 1; width: 370px; height: 283px;">
                 <ui:Label tabindex="-1" text="GARAGE" parse-escape-sequences="true" display-tooltip-when-elided="true" name="garageTitle" class="garage-title" />
-                <ui:VisualElement name="bicyclesContainer" class="bicycles-container" style="flex-grow: 1; align-items: center; justify-content: space-around; align-self: center; flex-wrap: wrap; flex-direction: row;">
-                    <ui:VisualElement name="bicyclesContainerCards" class="bicycles-container-cards" style="flex-grow: 1; justify-content: space-around; align-items: center;">
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bicycle1" class="bicycles" style="background-image: url(&quot;project://database/Assets/UI-COMPLETE/UI_base/Bici%20ok.png?fileID=21300000&amp;guid=60050816840d4524ebdad01ead69b2be&amp;type=3#Bici ok&quot;); -unity-background-scale-mode: scale-and-crop; background-color: rgb(39, 137, 59);" />
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bicycle2" class="bicycles" style="background-image: url(&quot;project://database/Assets/UI-COMPLETE/UI_base/Bici%20Silueta.png?fileID=21300000&amp;guid=cc044f0ae201aca44b7a1d3c9a99eace&amp;type=3#Bici Silueta&quot;); -unity-background-scale-mode: scale-to-fit; background-color: rgb(32, 32, 32);" />
-                    </ui:VisualElement>
-                    <ui:VisualElement name="bicyclesContainerTxt" class="bicycles-container-txt" style="flex-grow: 1;">
-                        <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-left;" />
-                        <ui:Label tabindex="-1" text="2" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: upper-center;" />
+                <ui:VisualElement name="bicyclesContainer" class="bicycles-container" style="flex-grow: 1; flex-wrap: wrap; flex-direction: row;">
+                    <ui:VisualElement name="bicyclesContainerCards" class="bicycles-container-cards" style="flex-grow: 1; justify-content: flex-start; align-items: stretch; flex-direction: row; width: 100%; max-width: none; min-width: auto; height: 100%;">
+                        <ui:VisualElement name="bici1Container" style="flex-grow: 1; width: 50%; align-items: center; justify-content: space-between;">
+                            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bicycle1" class="bicycles bicycle1" style="background-image: url(&quot;project://database/Assets/UI-COMPLETE/UI_base/bici-verde.png?fileID=2800000&amp;guid=cac6de9ce1e7d9f4c88d271e615afa59&amp;type=3#bici-verde&quot;); -unity-background-scale-mode: stretch-to-fill; background-color: rgba(90, 125, 224, 0.77); width: 70%; height: 80%;" />
+                            <ui:Label tabindex="-1" text="Bicicleta Nivel 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bici1" class="bici1" style="-unity-text-align: upper-center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                            <ui:Label tabindex="-1" text="Armado por piezas" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bici1Txt" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; color: rgb(255, 255, 255);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="bici2Container" style="flex-grow: 1; width: 50%; align-items: center; justify-content: space-between;">
+                            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bicycle2" class="bicycles" style="background-image: url(&quot;project://database/Assets/UI-COMPLETE/UI_base/bici-gris.png?fileID=2800000&amp;guid=19d7d74fcbb854643afb875489b0b02e&amp;type=3#bici-gris&quot;); -unity-background-scale-mode: scale-to-fit; background-color: rgba(159, 158, 158, 0.77); width: 70%; height: 80%;" />
+                            <ui:Label tabindex="-1" text="Bicicleta Nivel 2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bici2" class="bici2" style="-unity-text-align: upper-center; color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                            <ui:Label tabindex="-1" text="No disponible" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bici2Txt" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                        </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backBtn" class="back-btn" />
+                <ui:Button text="Volver Atrás" parse-escape-sequences="true" display-tooltip-when-elided="true" name="backBtn" class="back-btn" style="margin-top: 14px;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
