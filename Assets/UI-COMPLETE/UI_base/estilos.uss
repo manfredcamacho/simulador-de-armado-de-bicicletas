@@ -23,11 +23,11 @@
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    background-color: rgb(11, 146, 69);
-    border-left-color: rgb(11, 146, 69);
-    border-right-color: rgb(11, 146, 69);
-    border-top-color: rgb(11, 146, 69);
-    border-bottom-color: rgb(11, 146, 69);
+    background-color: rgb(41, 97, 255);
+    border-left-color: rgb(41, 97, 255);
+    border-right-color: rgb(41, 97, 255);
+    border-top-color: rgb(41, 97, 255);
+    border-bottom-color: rgb(41, 97, 255);
     color: rgb(255, 255, 255);
     -unity-font-style: bold;
     border-top-left-radius: 5px;
@@ -37,13 +37,14 @@
 }
 
 .instructions-btn:hover {
-    background-color: rgb(7, 5, 5);
-    border-left-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-top-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
-    transition-duration: 0.4s;
+    background-color: rgba(41, 97, 255, 0.59);
+    border-left-color: rgba(41, 97, 255, 0.59);
+    border-right-color: rgba(41, 97, 255, 0.59);
+    border-top-color: rgba(41, 97, 255, 0.59);
+    border-bottom-color: rgba(41, 97, 255, 0.59);
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    scale: 1.1 1.1;
 }
 
 .start-btn {
@@ -69,13 +70,14 @@
 }
 
 .start-btn:hover {
-    background-color: rgb(0, 0, 0);
-    border-left-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-top-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
-    transition-duration: 0.4s;
+    background-color: rgba(41, 97, 255, 0.59);
+    border-left-color: rgba(41, 97, 255, 0.59);
+    border-right-color: rgba(41, 97, 255, 0.59);
+    border-top-color: rgba(41, 97, 255, 0.59);
+    border-bottom-color: rgba(41, 97, 255, 0.59);
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
+    scale: 1.1 1.1;
 }
 
 .garage-title {
@@ -83,7 +85,7 @@
     color: rgb(255, 255, 255);
     font-size: 30px;
     text-overflow: clip;
-    text-shadow: 2px 1px 5px rgb(9, 147, 71);
+    text-shadow: 2px 1px 5px rgb(41, 97, 255);
 }
 
 .bicycles-container {
@@ -96,6 +98,16 @@
 }
 
 .back-btn {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(41, 97, 255);
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(41, 97, 255);
+    border-right-color: rgb(41, 97, 255);
+    border-top-color: rgb(41, 97, 255);
+    border-bottom-color: rgb(41, 97, 255);
 }
 
 .garage {
@@ -111,12 +123,59 @@
     justify-content: space-around;
     height: 100%;
     color: rgb(255, 255, 255);
+    width: 150px;
+    max-width: 150px;
+    min-width: 150px;
+    align-self: flex-start;
 }
 
 .bicycles-container-txt {
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .bicycles {
     height: 40%;
     width: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.back-btn:hover {
+    background-color: rgba(41, 97, 255, 0.59);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+    border-left-color: rgba(41, 97, 255, 0.59);
+    border-right-color: rgba(41, 97, 255, 0.59);
+    border-top-color: rgba(41, 97, 255, 0.59);
+    border-bottom-color: rgba(41, 97, 255, 0.59);
+}
+
+.bicycle1:hover {
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.78);
+    scale: 1.05 1.05;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.select-title {
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.bici1 {
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-center;
+}
+
+.bici2 {
 }
