@@ -12,7 +12,10 @@ public class NewBehaviourScript : MonoBehaviour // Clase que hereda de MonoBehav
     // Variables botones menú principal
     private Button showInstructions;
     private Button startBtn; // mismo nombre del elemento para evitar error 
-
+    private Button bicycle1;
+    private Button backBtn;
+    VisualElement leftContainer;
+    VisualElement rightContainer;
     private void OnEnable()
     {
         // Obtener el UIDocument y el elemento raíz del archivo UXML:visualElement
@@ -22,24 +25,44 @@ public class NewBehaviourScript : MonoBehaviour // Clase que hereda de MonoBehav
         // Asignación de los botones utilizando sus ID en UXML
         showInstructions = root.Q<Button>("instructionsBtn"); // usar el mismo name del UXML
         startBtn = root.Q<Button>("startBtn");
+        bicycle1 = root.Q<Button>("bicycle1");
+        backBtn = root.Q<Button>("backBtn");
+
+        leftContainer = root.Q<VisualElement>("leftContainer");
+        rightContainer = root.Q<VisualElement>("rightContainer");
 
         // Eventos 
         showInstructions.clicked += ShowInstructionsMethod;
-        startBtn.clicked += StartGameMethod; // chequear name
+        //startBtn.clicked += StartGameMethod; 
+        startBtn.RegisterCallback<ClickEvent>(OpenGarage);
+        bicycle1.clicked += StartGameMethod;
+        backBtn.clicked += BackToMethod;
     }
 
-    // Método mostrar las instrucciones
+    //Mostrar las instrucciones
     private void ShowInstructionsMethod()
     {
         Debug.Log("Mostrando instrucciones...");
         // FUNCIONA
     }
 
-    // Método para empezar el juego
+    //Abrir garage
+    private void OpenGarage(ClickEvent evt)
+    {
+        leftContainer.AddToClassList("left-container-active");
+        rightContainer.AddToClassList("right-container-active");
+    }
+    //Empezar el juego
     private void StartGameMethod()
     {
-        Debug.Log("Empezando el juego...");
-        // FUNCIONA
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    //volver atrás
+    private void BackToMethod()
+    {
+        leftContainer.RemoveFromClassList("left-container-active");
+        rightContainer.RemoveFromClassList("right-container-active");
     }
 }
+    
