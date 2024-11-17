@@ -2,6 +2,8 @@
     width: 30%;
     background-color: rgba(0, 0, 0, 0.72);
     justify-content: space-between;
+    translate: 120% 0;
+    transition-duration: 0.5s;
 }
 
 .logo-container {
@@ -178,4 +180,17 @@
 }
 
 .bici2 {
+}
+
+.right-container {
+    transition-duration: 0.5s;
+    translate: 100% 0;
+}
+
+.left-container-active {
+    translate: 0 0;
+}
+
+.right-container-active {
+    translate: 0 0;
 }
