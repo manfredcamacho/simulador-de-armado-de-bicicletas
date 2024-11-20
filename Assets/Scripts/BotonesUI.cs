@@ -21,6 +21,8 @@ public class BotonesUI : MonoBehaviour
     // Método para volver al inicio
     public void VolverAlInicio()
     {
+        Cursor.lockState = CursorLockMode.None; // Desbloquea el cursor
+        Cursor.visible = true;
         SceneManager.LoadScene("UI-INTERFACES");// Reemplaza "Inicio" con el nombre de tu escena de inicio
     }
 
