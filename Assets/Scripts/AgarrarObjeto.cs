@@ -26,7 +26,7 @@ public class AgarrarObjeto : MonoBehaviour
                 return; // Salimos del método
             }
 
-            // Verificar si el rayo ha tocado un objeto con el tag "Grabbable"
+            // Verificar si el rayo ha tocado un objeto con el tag "ParteBicicleta"
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider != null && hit.collider.CompareTag("ParteBicicleta"))
@@ -46,6 +46,7 @@ public class AgarrarObjeto : MonoBehaviour
 
     private void GrabObject(GameObject obj)
     {
+        gameObject.GetComponent<Timer>().startTimer();
         selectedObject = obj;
         isObjectAttached = true;
 

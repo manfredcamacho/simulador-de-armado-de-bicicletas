@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OrdenDeArmadoBicicleta : MonoBehaviour
 {
     public List<GameObject> ordenDeArmado;
     public Material materialResaltado; // Material para resaltar el siguiente punto de encaje
     private int indiceActual = 0; // Índice de la pieza actual a colocar
+    public GameObject scripts;
 
     void Start()
     {
@@ -35,6 +37,9 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
         else
         {
             Debug.Log("Bicicleta armada correctamente.");
+            scripts.GetComponent<Timer>().stopTimer();
+            scripts.GetComponent<Timer>().saveTime();
+            SceneManager.LoadScene("Final");
         }
     }
 
