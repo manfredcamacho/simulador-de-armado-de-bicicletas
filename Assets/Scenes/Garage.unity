@@ -5128,6 +5128,7 @@ GameObject:
   - component: {fileID: 1938613928}
   - component: {fileID: 1938613929}
   - component: {fileID: 1938613930}
+  - component: {fileID: 1938613931}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -5191,6 +5192,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   timerText: {fileID: 1978193408}
+--- !u!114 &1938613931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938613926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e99a35962ac0ae45a4359ac39b27349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1959342377
 GameObject:
   m_ObjectHideFlags: 0
