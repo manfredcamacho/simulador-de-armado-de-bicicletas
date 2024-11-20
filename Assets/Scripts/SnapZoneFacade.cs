@@ -1,3 +1,15 @@
+/*
+ * Nombre del Script:SnapZoneFacade.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,3 +48,16 @@ public class SnapZoneFacade : MonoBehaviour
         snapZone.material.color = new Color(1, 0, 0, 0.2f);*/
     }
 }
+
+/*
+ * Nombre del Script:SnapZoneFacade.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */

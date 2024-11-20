@@ -1,3 +1,16 @@
+
+/*
+ * Nombre del Script: OrdenDeArmadoBicicleta .cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -55,3 +68,17 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
         renderer.materials = Enumerable.Repeat(materialResaltado, renderer.materials.Length).ToArray();
     }
 }
+
+
+/*
+ * Nombre del Script: OrdenDeArmadoBicicleta .cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */

@@ -1,3 +1,16 @@
+/*
+ * Nombre del Script: BotonesUI.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+
+ */
 using UnityEngine;
 using UnityEngine.SceneManagement; // Para manejar escenas
 
@@ -34,3 +47,16 @@ public class BotonesUI : MonoBehaviour
 
     }
 }
+/*
+ * Nombre del Script: StaticData.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+
+ */

@@ -1,3 +1,16 @@
+/*
+ * Nombre del Script:ConexionDePosicion.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,3 +64,16 @@ public class ConexionDePosicion : MonoBehaviour
         
     }
 }
+
+/*
+ * Nombre del Script:ConexionDePosicion.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */

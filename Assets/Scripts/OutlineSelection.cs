@@ -1,3 +1,17 @@
+/*
+ * Nombre del Script: OutlineSelection.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,3 +65,16 @@ public class OutlineSelection : MonoBehaviour
         }
     }
 }
+
+/*
+ * Nombre del Script: OutlineSelection.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */
