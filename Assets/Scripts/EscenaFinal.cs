@@ -1,3 +1,19 @@
+
+/*
+ * Nombre del Script: EscenaFinal.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+
+ */
+
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -62,3 +78,19 @@ public class EscenaFinal : MonoBehaviour
         Cursor.visible = true;
     }
 }
+
+
+
+/*
+ * Nombre del Script: EscenaFinal.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+
+ */

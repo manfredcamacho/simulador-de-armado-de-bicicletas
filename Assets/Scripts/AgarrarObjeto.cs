@@ -1,3 +1,15 @@
+/*
+ * Nombre del Script:AgarrarObjeto.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */
 using UnityEngine;
 
 public class AgarrarObjeto : MonoBehaviour
@@ -122,3 +134,16 @@ public class AgarrarObjeto : MonoBehaviour
 6 Pedal Derecho
 7 Pedal Izquierdo 
 Este orden va porque va de mas facil a mas dificil*/
+
+/*
+ * Nombre del Script:AgarrarObjeto.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */
