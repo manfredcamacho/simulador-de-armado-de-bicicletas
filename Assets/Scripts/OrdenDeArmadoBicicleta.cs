@@ -23,7 +23,11 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
         // Verifica si la pieza es igual con el siguiente en la secuencia
         return ordenDeArmado[indiceActual] == pieza;
     }
-
+    public GameObject PiezaSiguiente()
+    {
+        return ordenDeArmado[indiceActual];
+     
+    }
     public void ResaltarSiguientePieza()
     {
         indiceActual++; 

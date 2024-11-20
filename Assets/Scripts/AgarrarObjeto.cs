@@ -5,7 +5,7 @@ public class AgarrarObjeto : MonoBehaviour
     public Camera playerCamera; // Cámara PlayerCamera dentro de FirstPersonController
     public Vector3 offset = new Vector3(0, -0.5f, 1.0f); // Posición relativa para colocar el objeto
     public float moveSpeed = 5f; // Velocidad de movimiento del objeto
-
+    private int piezasIncorrectas = 0;  // Contador de piezas incorrectas
     private GameObject selectedObject = null; // Objeto que será seleccionado al hacer clic
     private bool isObjectAttached = false; // Indica si el objeto está "agarrado"
 
@@ -43,15 +43,25 @@ public class AgarrarObjeto : MonoBehaviour
             MoveObject();
         }
     }
+    public void IncrementarError()
+    {
+        piezasIncorrectas++;
+        StaticData.cantidadErrores++;
+        Debug.Log($"Cantidad de errores {piezasIncorrectas}");
+    }
 
     private void GrabObject(GameObject obj)
     {
         gameObject.GetComponent<Timer>().startTimer();
         selectedObject = obj;
         isObjectAttached = true;
-
+        OrdenDeArmadoBicicleta ordenDeArmado = obj.GetComponentInParent<OrdenDeArmadoBicicleta>();
         // Desactivar la física del objeto para que no se vea afectado por la gravedad
         Rigidbody rb = selectedObject.GetComponent<Rigidbody>();
+        if (obj != ordenDeArmado.PiezaSiguiente())
+        {
+            IncrementarError();
+        }
         if (rb != null)
         {
             rb.isKinematic = true;
