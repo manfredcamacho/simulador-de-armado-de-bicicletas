@@ -7,13 +7,38 @@ using UnityEngine.SceneManagement;
 public class EscenaFinal : MonoBehaviour
 {
     public TextMeshProUGUI lastTime;
-
+    public TextMeshProUGUI Errores;
+    public TextMeshProUGUI Devolucion;
     void Start()
     {
         mostrarPunteroMouse();
         recuperarUltimoTiempo();
+        recuperarErrores();
+        calcularPuntaje();
     }
-
+    public void recuperarErrores()
+    {
+       Errores.text = StaticData.cantidadErrores.ToString();
+    }
+    public void calcularPuntaje()
+    {
+        if (StaticData.cantidadErrores == 0)
+        {
+            Devolucion.text = "Excelente";
+        }
+        else if(StaticData.cantidadErrores > 0 && StaticData.cantidadErrores <3)
+        {
+            Devolucion.text = "Muy Bien";
+        }
+        else if(StaticData.cantidadErrores > 3 && StaticData.cantidadErrores < 5)
+        {
+            Devolucion.text = "Bien";
+        }
+        else 
+        {
+            Devolucion.text = "Intentanlo de nuevo";
+        }
+    }
     public void SalirDelSimulador()
     {
         Application.Quit();
