@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OrdenDeArmadoBicicleta : MonoBehaviour
 {
+    public ChecklistController checklistController;  // Referencia al ChecklistController
     public List<GameObject> ordenDeArmado;
     public Material materialResaltado; // Material para resaltar el siguiente punto de encaje
     private int indiceActual = 0; // Índice de la pieza actual a colocar
@@ -24,6 +25,7 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
 
     public void ResaltarSiguientePieza()
     {
+
         indiceActual++; 
 
         // Si quedan más piezas, resalta el siguiente punto
