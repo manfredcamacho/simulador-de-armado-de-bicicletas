@@ -1,3 +1,16 @@
+
+/*
+ * Nombre del Script: codigo.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,4 +78,20 @@ public class NewBehaviourScript : MonoBehaviour // Clase que hereda de MonoBehav
         rightContainer.RemoveFromClassList("right-container-active");
     }
 }
-    
+
+
+
+
+
+/*
+ * Nombre del Script: codigo.cs
+ 
+ * 
+ * Autores:
+ * - Africa Aular
+ * - Braian Arguello
+ * - Brenda Lugo
+ * - Manfred Camacho
+ * - Jorge Aguilar
+ * 
+ */    
