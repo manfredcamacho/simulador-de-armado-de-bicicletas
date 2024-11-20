@@ -7,11 +7,14 @@ public class OrdenDeArmadoBicicleta : MonoBehaviour
     public List<GameObject> ordenDeArmado;
     public Material materialResaltado; // Material para resaltar el siguiente punto de encaje
     private int indiceActual = 0; // Índice de la pieza actual a colocar
+   
+
 
     void Start()
     {
         if (ordenDeArmado.Count > 0)
         {
+            
             ResaltarPieza(indiceActual); // Resaltar el primer punto de encaje
         }
     }

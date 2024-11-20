@@ -7,26 +7,32 @@ public class ConexionDePosicion : MonoBehaviour
     public Transform snapPoint; 
     public float snapDistance = 0.5f; 
     private bool isAttached = false;
-    public GameObject agarraScript;
+    public GameObject Scripts;
 
+ 
     void Update()
     {
+
         if (!isAttached && Vector3.Distance(transform.position, snapPoint.position) < snapDistance)
         {
+
             //Obtengo el componente padre que tiene el Script armado del orden de bicicleta
             OrdenDeArmadoBicicleta orden = gameObject.GetComponentInParent<OrdenDeArmadoBicicleta>();
+            EstadisticasArmado estadisticasArmado = Scripts.GetComponent<EstadisticasArmado>();
 
             //Devuelve un bool despues de evaluar pieza sostenida con orden solicitado 
             if (orden.PuedeColocarPieza(gameObject))
             {   
                
-                AgarrarObjeto agarrar = agarraScript.GetComponent<AgarrarObjeto>();
+                AgarrarObjeto agarrar = Scripts.GetComponent<AgarrarObjeto>();
                 agarrar.ReleaseObject();
                 SnapToPlace();
                 orden.ResaltarSiguientePieza();
+                estadisticasArmado.IncrementarAcierto();
             }
             else
             {
+                estadisticasArmado.IncrementarError();  // Incrementar contador de piezas incorrectas
                 //cambiar color de la pieza?
                 Debug.Log("No es la pieza correcta");
             }
