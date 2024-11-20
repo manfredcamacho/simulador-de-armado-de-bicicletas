@@ -10,6 +10,12 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerText;
     void Update()
     {
+
+        if (timerText == null)
+        {
+            Debug.LogError("TimerText is not assigned in the Inspector!");
+            return;
+        }
         timer += Time.deltaTime;
 
         int hours = Mathf.FloorToInt(timer / 3600);
