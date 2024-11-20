@@ -27,7 +27,7 @@ public class BotonesUI : MonoBehaviour
     // Método para cerrar el programa
     public void CerrarPrograma()
     {
-        UnityEditor.EditorApplication.isPlaying = false; // Para detener el modo Play en Unity
+        //UnityEditor.EditorApplication.isPlaying = false; // Para detener el modo Play en Unity
         Application.Quit(); // Para cerrar el programa en una build
 
     }
