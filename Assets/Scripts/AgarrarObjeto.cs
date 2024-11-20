@@ -67,9 +67,9 @@ public class AgarrarObjeto : MonoBehaviour
             rb.isKinematic = true;
         }
 
-        // Desactivar el collider del objeto
-        Collider coll = selectedObject.GetComponent<Collider>();
-        if (coll != null)
+        // Desactivar los colliders del objeto
+        Collider[] colliders = selectedObject.GetComponentsInChildren<Collider>();
+        foreach (Collider coll in colliders)
         {
             coll.enabled = false;
         }
@@ -88,8 +88,8 @@ public class AgarrarObjeto : MonoBehaviour
                 rb.isKinematic = false;
             }
             // Reactivar el collider del objeto
-            Collider coll = selectedObject.GetComponent<Collider>();
-            if (coll != null)
+            Collider[] colliders = selectedObject.GetComponentsInChildren<Collider>();
+            foreach (Collider coll in colliders)
             {
                 coll.enabled = true;
             }
